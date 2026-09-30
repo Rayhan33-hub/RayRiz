@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Biodata | Muhammad Rayhan Rizky Pratama</title>
+  <meta name="description" content="Biodata diri Muhammad Rayhan Rizky Pratama" />
+
+  <!-- Tailwind CSS (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: '#030816',
+            panel: '#08132b',
+            neon: '#1fd1ff',
+            volt: '#2e6bff',
+          },
+          fontFamily: {
+            display: ['Sora', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            body: ['"IBM Plex Sans"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      background:
+        radial-gradient(ellipse 60% 40% at 50% 0%, rgba(31, 209, 255, 0.16), transparent 70%),
+        #030816;
+    }
+    .glow-text { text-shadow: 0 0 24px rgba(31, 209, 255, 0.45); }
+    .glow-box  { box-shadow: 0 0 0 1px rgba(31, 209, 255, 0.35), 0 0 28px rgba(31, 209, 255, 0.18); }
+
+    /* Cincin listrik di sekitar foto: satu-satunya animasi otomatis */
+    .ring {
+      background: conic-gradient(from 0deg, #1fd1ff, #2e6bff, #030816 40%, #1fd1ff);
+      animation: spin 6s linear infinite;
+      filter: drop-shadow(0 0 14px rgba(31, 209, 255, 0.7));
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    @media (prefers-reduced-motion: reduce) {
+      .ring { animation: none; }
+      * { transition: none !important; }
+    }
+  </style>
+</head>
+
+<body class="font-body text-slate-300 antialiased min-h-screen">
+  <main class="mx-auto flex max-w-2xl flex-col items-center px-5 py-14 sm:py-20">
+
+    <!-- HERO -->
+    <header class="flex flex-col items-center text-center">
+      <div class="relative h-40 w-40 sm:h-48 sm:w-48">
+        <div class="ring absolute inset-0 rounded-full"></div>
+        <!-- Ganti src dengan foto kamu, mis. src="foto.jpg" -->
+        <img
+          src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%2308132b'/%3E%3Ccircle cx='100' cy='78' r='34' fill='%231fd1ff'/%3E%3Cpath d='M32 200c0-42 30-68 68-68s68 26 68 68z' fill='%232e6bff'/%3E%3C/svg%3E"
+          alt="Foto profil Muhammad Rayhan Rizky Pratama"
+          class="absolute inset-[5px] h-[calc(100%-10px)] w-[calc(100%-10px)] rounded-full border-4 border-ink object-cover"
+        />
+      </div>
+
+      <h1 class="glow-text mt-8 bg-gradient-to-r from-neon to-volt bg-clip-text font-display text-3xl font-extrabold leading-tight tracking-tight text-transparent sm:text-5xl">
+        Muhammad Rayhan Rizky Pratama
+      </h1>
+      <p class="mt-2 font-display text-base font-semibold text-white sm:text-lg">SMA GUNUNG MADU</p>
+    </header>
+
+    <!-- TENTANG SAYA -->
+    <section class="mt-14 w-full" aria-labelledby="tentang">
+      <h2 id="tentang" class="flex items-center gap-3 font-display text-xl font-bold text-white">
+        <span class="h-6 w-1 rounded-full bg-neon shadow-[0_0_10px_#1fd1ff]"></span>
+        Tentang saya
+      </h2>
+      <p class="mt-4 leading-relaxed text-slate-400">
+        Saya adalah salah satu siswa kelas XII yang mengambil mata pelajaran CIT Tingkat Lanjut.
+      </p>
+    </section>
+
+    <!-- DETAIL PRIBADI -->
+    <section class="mt-12 w-full" aria-labelledby="detail">
+      <h2 id="detail" class="flex items-center gap-3 font-display text-xl font-bold text-white">
+        <span class="h-6 w-1 rounded-full bg-neon shadow-[0_0_10px_#1fd1ff]"></span>
+        Detail pribadi
+      </h2>
+
+      <div class="glow-box mt-4 overflow-hidden rounded-2xl bg-panel/70">
+        <table class="w-full text-left text-sm sm:text-base">
+          <tbody class="divide-y divide-neon/10">
+            <tr>
+              <th scope="row" class="w-2/5 px-4 py-3.5 align-top font-medium text-neon sm:w-1/3 sm:px-6">Nama</th>
+              <td class="px-4 py-3.5 text-slate-200 sm:px-6">Muhammad Rayhan Rizky Pratama</td>
+            </tr>
+            <tr>
+              <th scope="row" class="px-4 py-3.5 align-top font-medium text-neon sm:px-6">Tempat, tanggal lahir</th>
+              <td class="px-4 py-3.5 text-slate-200 sm:px-6">Poncowati, 13 Juli 2009</td>
+            </tr>
+            <tr>
+              <th scope="row" class="px-4 py-3.5 align-top font-medium text-neon sm:px-6">Alamat</th>
+              <td class="px-4 py-3.5 text-slate-200 sm:px-6">Jl. Melati, Perumahan 2</td>
+            </tr>
+            <tr>
+              <th scope="row" class="px-4 py-3.5 align-top font-medium text-neon sm:px-6">Email</th>
+              <td class="break-all px-4 py-3.5 sm:px-6">
+                <a href="mailto:rayhanrizkypratama276@gmail.com" class="text-slate-200 underline decoration-neon/40 underline-offset-4 hover:text-neon focus-visible:outline focus-visible:outline-2 focus-visible:outline-neon">rayhanrizkypratama276@gmail.com</a>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="px-4 py-3.5 align-top font-medium text-neon sm:px-6">No. HP</th>
+              <td class="px-4 py-3.5 sm:px-6">
+                <a href="tel:+6282269018007" class="text-slate-200 underline decoration-neon/40 underline-offset-4 hover:text-neon focus-visible:outline focus-visible:outline-2 focus-visible:outline-neon">0822-6901-8007</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- HOBI -->
+    <section class="mt-12 w-full" aria-labelledby="hobi">
+      <h2 id="hobi" class="flex items-center gap-3 font-display text-xl font-bold text-white">
+        <span class="h-6 w-1 rounded-full bg-neon shadow-[0_0_10px_#1fd1ff]"></span>
+        Hobi
+      </h2>
+      <ul class="mt-4 flex flex-wrap gap-2.5">
+        <li class="rounded-full border border-neon/40 bg-neon/10 px-4 py-1.5 text-sm font-medium text-neon">Mancing</li>
+        <li class="rounded-full border border-neon/40 bg-neon/10 px-4 py-1.5 text-sm font-medium text-neon">Berlari</li>
+        <li class="rounded-full border border-neon/40 bg-neon/10 px-4 py-1.5 text-sm font-medium text-neon">Bermain game</li>
+      </ul>
+    </section>
+
+    <!-- MEDIA SOSIAL -->
+    <footer class="mt-16 flex w-full flex-col items-center border-t border-neon/10 pt-10">
+      <p class="text-sm text-slate-500">Terhubung dengan saya</p>
+      <div class="mt-5 flex gap-4">
+        <!-- Ganti href dengan akun kamu -->
+        <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"
+           class="flex h-12 w-12 items-center justify-center rounded-full border border-neon/40 text-neon transition hover:bg-neon hover:text-ink hover:shadow-[0_0_20px_#1fd1ff] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neon">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/></svg>
+        </a>
+        <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"
+           class="flex h-12 w-12 items-center justify-center rounded-full border border-neon/40 text-neon transition hover:bg-neon hover:text-ink hover:shadow-[0_0_20px_#1fd1ff] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neon">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>
+        </a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"
+           class="flex h-12 w-12 items-center justify-center rounded-full border border-neon/40 text-neon transition hover:bg-neon hover:text-ink hover:shadow-[0_0_20px_#1fd1ff] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neon">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4V21H3zM9.75 9.75h3.83v1.54h.05c.53-1 1.84-2.06 3.79-2.06 4.05 0 4.8 2.66 4.8 6.12V21h-4v-4.9c0-1.17-.02-2.68-1.63-2.68-1.63 0-1.88 1.28-1.88 2.6V21h-4z"/></svg>
+        </a>
+        <a href="mailto:rayhanrizkypratama276@gmail.com" aria-label="Email"
+           class="flex h-12 w-12 items-center justify-center rounded-full border border-neon/40 text-neon transition hover:bg-neon hover:text-ink hover:shadow-[0_0_20px_#1fd1ff] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neon">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        </a>
+      </div>
+      <p class="mt-10 text-xs text-slate-600">&copy; 2026 Muhammad Rayhan Rizky Pratama</p>
+    </footer>
+
+  </main>
+</body>
+</html>
